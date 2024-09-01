@@ -2,7 +2,7 @@
 //require("./js-foundation/02-destructuring")
 
 // const { getUserById } = require("./js-foundation/03-callbacks");
-require("./js-foundation/04-factory")
+const { buildPerson } = require("./js-foundation/04-factory");
 
 // const id = 2;
 
@@ -13,3 +13,14 @@ require("./js-foundation/04-factory")
 
 //   console.log(user);
 // });
+
+const { getAge } = require("./plugins/get-age.plugin");
+const { getId } = require("./plugins/get-id.plugin");
+
+const makePerson = buildPerson({ getAge, getId });
+
+const johnData = { name: "John", birthdate: "2000-02-08" };
+
+const john = makePerson(johnData);
+
+console.log(john);

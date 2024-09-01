@@ -6,6 +6,6 @@ const getAge = (birthdate) => {
     return getAgePlugin(birthdate)
 }
 
-module.export = {
+module.exports = {
     getAge,
 }
