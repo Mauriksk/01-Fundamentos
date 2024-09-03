@@ -1,9 +1,17 @@
-const { getPokemonById } = require("./js-foundation/05-promises");
 
-getPokemonById(1)
-  .then((pokemon) => console.log(pokemon))
-  .catch((err) => console.log(err))
-  .finally(() => console.log("Finalmente"));
+const buildLogger = require("./plugins/logger.pluggin")
+
+const logger = buildLogger("app.js")
+
+logger.log("Hola Mauri")
+logger.error("Error papi")
+
+// const { getPokemonById } = require("./js-foundation/05-promises");
+
+// getPokemonById(1)
+//   .then((pokemon) => console.log(pokemon))
+//   .catch((err) => console.log(err))
+//   .finally(() => console.log("Finalmente"));
 
 //const { emailTemplate } = require("./js-foundation/01-template");
 //require("./js-foundation/02-destructuring")
