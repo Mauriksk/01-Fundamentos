@@ -1,10 +1,10 @@
 
-const buildLogger = require("./plugins/logger.pluggin")
+//const buildLogger = require("./plugins/logger.pluggin")
 
-const logger = buildLogger("app.js")
+// const logger = buildLogger("app.js")
 
-logger.log("Hola Mauri")
-logger.error("Error papi")
+// logger.log("Hola Mauri")
+// logger.error("Error papi")
 
 // const { getPokemonById } = require("./js-foundation/05-promises");
 
