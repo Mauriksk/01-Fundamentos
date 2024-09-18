@@ -1,3 +1,35 @@
+const dateOfBirth = "2001-01-13T00:00:00.000Z"
+
+const formatDate = (date) => {
+    const newDate = new Date(date)
+      .toLocaleDateString("es-ES", {
+        year: "numeric",
+        month: "short",
+        day: "numeric",
+        timeZone: "UTC"
+      })
+      .replaceAll(" ", "-");
+    return newDate.toUpperCase();
+  };
+
+console.log(  formatDate(dateOfBirth))
+
+console.log(dateOfBirth)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 //const buildLogger = require("./plugins/logger.pluggin")
 
